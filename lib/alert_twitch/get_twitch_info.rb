@@ -44,7 +44,6 @@ class GetTwitchInfo
 
   def get_channels
     data = []
-    puts "twitch id = #{@twitch_id}"
     channels = HTTParty.get("https://api.twitch.tv/kraken/users/#{@twitch_id}/follows/channels?client_id=#{@client_id}")
     channels['follows'].each do |c|
       data << c['channel']['display_name']

@@ -14,7 +14,6 @@ class GetConfig
       data = JSON.parse(file)
       @client_id = data['twitch_client_id']
       @twitch_id = data['twitch_id']
-      puts "twitch id no read é #{@twitch_id}"
       @twilio_number = data['twilio_number']
       @phone_number = data['phone_number']
       @account_sid = data['twilio_account_sid']

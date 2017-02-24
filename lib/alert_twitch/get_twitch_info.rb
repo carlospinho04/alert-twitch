@@ -11,13 +11,13 @@ class GetTwitchInfo
     @cache = []
   end
 
-  #update cache if streamer comes online or offline
-  #also ignore streamers that were already online 
+  # update cache if streamer comes online or offline
+  # also ignore streamers that were already online 
 
   def filter_info (streamers_online)
-    if !@cache.empty?
+    unless @cache.empty?
       @cache.each do |c|
-        if !streamers_online.include?c
+        unless streamers_online.include?c
           @cache -= [c]
         end
       end

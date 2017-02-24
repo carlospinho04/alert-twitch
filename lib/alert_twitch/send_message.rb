@@ -4,7 +4,7 @@ require 'twilio-ruby'
 class MessageSender
   def send_message(streamers_online,twilio_number, phone_number, account_sid, oauth_token)
     message = 'The followings streamers are online: '
-    if !streamers_online.empty?
+    unless streamers_online.empty?
       streamers_online.each do |s|
         if s.equal?(streamers_online.last)
           message = message + s + '.'

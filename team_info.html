@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>  EmotionalOdds </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="team_info.css">
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="team_info.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="beta.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="header">
+            <ul>
+                <li><a href="index.html"><p>Home</p></a></li>
+                    <div onclick="myFunction()" class="dropdown">
+                <li><a class = "dropbtn current_team" id="current" ><p>Teams</p></a></li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a onclick="chooseRegion(event)" id="euw">EUW</a>
+                        <a onclick="chooseRegion(event)" id="na">NA</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div id='wrapper'>
+          <div id='team_logo'></div>
+          <div id='team_name'></div>
+        </div>
+        <table id = 'team_players'></table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+html {
+    font-family: helvetica, serif;
+}
+html, body{
+    margin: 0;
+    background-color: rgb(20,20,20);
+    background-image: url("Assets/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+}
+
+
+
+nav {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    /*background-color: #4484ce;*/
+}
+
+nav ul{
+    margin:0;
+    list-style: none;
+}
+
+nav ul li{
+    font-weight: bold;
+    display: inline;
+    transition: 1s;
+}
+
+nav ul li a{
+    position: relative;
+    cursor: pointer;
+    line-height: 100%;
+    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover p{
+    color: #4484ce;
+}
+
+.current_team{
+    width:100%;
+}
+
+#current{
+    color: #4484ce
+    /*background-color: #0074ce;*/
+}
+
+.teams{
+    margin: auto;
+    width: 60%;
+    /*background: rgba(0,0,0,0.6);*/
+    list-style: none;
+    padding-top: 5em;
+}
+
+.teams li div{
+    width: 100%;
+    background-color: rgba(20,20,20,0.4);
+    text-align: left;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    display: block;
+    cursor: pointer;
+}
+
+.teams li p{
+    line-height: 3em;
+    max-height: 5em;
+    padding-left: 2em;
+    overflow: hidden;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+
+}
+
+.teams li img{
+    padding: 0.5em;
+    position: relative;
+    width: 15%;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+h1{
+	color: white;
+    font-size: 1.5em;
+     text-shadow: 2px 2px #000000;
+    padding-top: 3em;
+    padding-left: 14em;
+}
+
+table{
+    table-layout:fixed;
+    /*border-collapse:;*/
+    border-spacing:0;
+    border-style:hidden;
+}
+
+.table{
+    padding: 2em;
+    padding-top: 0em;
+    padding-right: 1.5em;
+    background-color: rgba(0,0,0,0.6);
+    margin:auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.table tr{
+    margin-top: 2em;
+}
+
+.table td{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.tableCell{
+    padding-top: 1em; 
+    padding-right: 1em;
+    padding-left: 1em;  
+    padding-bottom: 1em;
+    text-align: center;
+    border-bottom:  2px solid white;
+}
+
+
+
+.teamNames{
+    padding-top: 1em;
+    padding-bottom: 1em;
+        border-bottom:  2px solid white;
+}
+
+.logo{
+    padding-right: 1em;
+        border-bottom:  2px solid white;
+
+}

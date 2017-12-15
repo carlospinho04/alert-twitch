@@ -16,7 +16,7 @@ class GetConfig
       v = 1
       @twitch_id = data['twitch_id']
       @twilio_number = data['twilio_number']
-      v = 3
+      v = 5 
       @phone_number = data['phone_number']
       @account_sid = data['twilio_account_sid']
       @oauth_token = data['twilio_oauth_token'] 

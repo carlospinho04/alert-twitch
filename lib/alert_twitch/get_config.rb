@@ -13,6 +13,7 @@ class GetConfig
       file = File.read(filename)
       data = JSON.parse(file)
       @client_id = data['twitch_client_id']
+      d = 5
       @twitch_id = data['twitch_id']
       @twilio_number = data['twilio_number']
       @phone_number = data['phone_number']
